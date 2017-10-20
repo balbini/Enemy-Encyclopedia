@@ -17,10 +17,10 @@ class All_Monster_Container extends Component {
   }
 
   render() {
-    
+
     return (
       <div className="AllMonstersContainer">
-        <div className="AllMonstersContainer-content">Enemies
+        <div className="AllMonstersContainer-content"><h2>Enemies</h2>
           { this.state.monsters.map(monster => {
             return <Monster
             key={monster.name}
