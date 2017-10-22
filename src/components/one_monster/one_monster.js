@@ -14,16 +14,22 @@ class OneMonster extends Component {
       <div className="OneMonster">
         <div className="OneMonster-container">
           <Row>
-            <Col l={4} className='grid'>
+            <Col l={12} className='grid'>
               <ul>
-                <h2><li>Name: {this.props.name}</li></h2>
-                <li>Size: {this.props.size}</li>
-                <li>Type: {this.props.type}</li>
-                <li>Speed: {this.props.speed}</li>
-                <li>Actions: {this.props.actions}</li>
-                <li>special_abilities:
+                <h2><li>{this.props.name}</li></h2>
+                <li><b>Alignment:</b> {this.props.alignment}</li>
+                <li><b>Size:</b> {this.props.size}</li>
+                <li><b>Type:</b> {this.props.type}</li>
+                <li><b>Speed:</b> {this.props.speed}</li>
+                <li><b>Actions:</b>
+                  <ul>{this.props.actions.map(action => {
+                    return <li> -{action}</li>
+                    })}
+                  </ul>
+                </li>
+                <li><b>Special Abilities:</b>
                   <ul>{this.props.special_abilities && this.props.special_abilities.map(ability => {
-                    return <li>{ability}</li>
+                    return <li> -{ability}</li>
                       })}
                   </ul>
                 </li>

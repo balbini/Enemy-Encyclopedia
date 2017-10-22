@@ -33,6 +33,7 @@ class One_Monster_Container extends Component {
             key={this.state.monster._id}
             _id={this.state.monster._id}
             name={this.state.monster.name}
+            alignment={this.state.monster.alignment}
             size={this.state.monster.size}
             type={this.state.monster.type}
             speed={this.state.monster.speed}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {Row, Col} from 'react-materialize';
+import {Row, Col, Card} from 'react-materialize';
 
 class Monster extends Component {
 
@@ -15,8 +15,9 @@ class Monster extends Component {
       <div className="Monster">
         <div className="Monster-container">
           <Row>
-            <Col l={12} s={2} className='grid'>
-                <h3><Link to={`/monsters/${oneMonster}`}>{this.props.name}</Link></h3>
+            <Col l={12} s={12}>
+                <Card className='grey darken-1' textClassName='white-text' title={this.props.name}><h3><Link to={`/monsters/${oneMonster}`}>{this.props.name}</Link></h3>
+                </Card>
               </Col>
             </Row>
         </div>

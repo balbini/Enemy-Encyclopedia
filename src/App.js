@@ -10,8 +10,7 @@ class App extends Component {
     return (
     <Router>
       <div>
-        <p><Link to="/">Home</Link></p>
-        <h1>Enemy Encyclopedia</h1>
+        <h1 className="title"><Link to="/">Enemy Encyclopedia</Link></h1>
         <hr/>
         <Route exact path="/" component={All_Monster_Container}/>
         <Route exact path='/monsters/:monster_id' component={One_Monster_Container}/>
