@@ -1,5 +1,15 @@
 
 .title {
   text-align: center;
+}
+a {
   color: black;
+}
+
+hr {
+  width: 90vw;
+}
+
+html {
+  background-color: grey;
 }

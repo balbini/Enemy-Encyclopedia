@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Monster from '../components/monster/monster';
 
+
+
 class All_Monster_Container extends Component {
   constructor() {
     super();
@@ -20,7 +22,8 @@ class All_Monster_Container extends Component {
 
     return (
       <div className="AllMonstersContainer">
-        <div className="AllMonstersContainer-content"><h2>Enemies</h2>
+        <div className="AllMonstersContainer-content"><h2>Choose An Ememy</h2>
+
           { this.state.monsters.map(monster => {
             return <Monster
             key={monster.name}
