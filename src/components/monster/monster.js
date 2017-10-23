@@ -16,7 +16,7 @@ class Monster extends Component {
         <div className="Monster-container">
           <Row>
             <Col l={12} s={12}>
-                <Card className='grey darken-1' textClassName='white-text' title={this.props.name}><h3><Link to={`/monsters/${oneMonster}`}>{this.props.name}</Link></h3>
+                <Card className='grey' textClassName='white-text' title={this.props.name}><h6><Link to={`/monsters/${oneMonster}`}>More About This Enemy</Link></h6>
                 </Card>
               </Col>
             </Row>
