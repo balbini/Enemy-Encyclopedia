@@ -38,6 +38,7 @@ class One_Monster_Container extends Component {
             armor_class={this.state.monster.armor_class}
             hit_points={this.state.monster.hit_points}
             speed={this.state.monster.speed}
+            actions={this.state.monster.actions}
             actionsName={this.state.monster.actions.map(action => action.name)}
             actionsDescription={this.state.monster.actions.map(description => description.desc)}
             special_abilities={this.state.monster.special_abilities && this.state.monster.special_abilities.map(ability => ability.desc)}
